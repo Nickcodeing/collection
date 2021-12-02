@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -59,6 +61,16 @@ public class TestThread {
             }
         }
         return "success";
+    }
+
+
+    public static void main(String[] args) {
+        List<String> list1 = new ArrayList<>();
+        list1.add("admin");
+        List<String> list2 = new ArrayList<>();
+        list2.add("admin");
+        list1.addAll(list2);
+        System.out.println(list1);
     }
 
 }

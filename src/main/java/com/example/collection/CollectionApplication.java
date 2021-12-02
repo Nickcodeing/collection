@@ -15,7 +15,7 @@ public class CollectionApplication {
     @Bean
     public ThreadPoolTaskScheduler getThreadPoolTaskScheduler(){
         ThreadPoolTaskScheduler threadPoolTaskScheduler = new ThreadPoolTaskScheduler();
-        threadPoolTaskScheduler.setPoolSize(2);
+        threadPoolTaskScheduler.setPoolSize(20);
         return threadPoolTaskScheduler;
     }
 
